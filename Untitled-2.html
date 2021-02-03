@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>Julia's To do List App</title>
         <meta name="vieport" content="width=device-width, initial-scale=1">
-        <link rel = "Stylesheet" href = "./body2.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="Stylesheet" href="./body2.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+            integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
     </head>
-<body>
-<div id="todo"></div>
 
-    <div class="header">
-        <h1> My to do list <i id="pencil" class="fas fa-pencil-alt"></i></h1>
-    </div>
+    <body>
+        <div id="todo"></div>
 
-    <div class="input">
-        <input type="text" placeholder="Add New Todo" maxlength="30">
-    </div>
+        <div class="header">
+            <h1> My to do list <i id="pencil" class="fas fa-pencil-alt"></i></h1>
+        </div>
 
-    <div class="message"></div>
+        <div class="input">
+            <input type="text" placeholder="Add New Todo" maxlength="30">
+        </div>
 
-    <div class="todos">
-        <ul class="todos"></ul>
-    </div>
+        <div class="message"></div>
+
+        <div class="todos">
+            <ul class="todos"></ul>
+        </div>
+
+        <h1>WE Done with this</h1>
+
+        <div id="buttons">
+            <button class="save">Save</button>
+            <button class="clear">Clear</button>
+            <button class="tipBtn">Tips</button>
+        </div>
+
+        </div>
 
 
-    <div id="buttons">
-        <button class="save">Save</button>
-        <button class="clear">Clear</button>
-        <button class="tipBtn">Tips</button>
-    </div>
 
-</div>
+        <div id="overlay">
+            <a href="javascript:void(0)" class="closebtn">&times;</a>
+            <ul type="disc" class="tips">
+                <li>Click on the pencil to hide or show input area</li>
+                <li>Type text into input area and press enter to add todo to list</li>
+                <li>Hover over the todo and click the on trash can to delete</li>
+                <li>Hover over the todo and click the on check icon can to checked</li>
+                <li>Click the clear button to clear all todos from list</li>
+                <li>Click the Save button to save your todos to access them later even if you exit the browser </li>
+            </ul>
+        </div>
 
-    
+        <script src="./todo.js"></script>
+    </body>
 
-    <div id="overlay">
-        <a href="javascript:void(0)" class="closebtn">&times;</a>
-        <ul type="disc" class="tips">
-            <li>Click on the pencil to hide or show input area</li>
-            <li>Type text into input area and press enter to add todo to list</li>
-            <li>Hover over the todo and click the on trash can to delete</li>
-            <li>Hover over the todo and click the on check icon can to checked</li>
-            <li>Click the clear button to clear all todos from list</li>
-            <li>Click the Save button to save your todos to access them later even if you exit the browser </li>
-        </ul>
-    </div>
-
-    <script src="./todo.js"></script>
-</body>
 </html>
-
