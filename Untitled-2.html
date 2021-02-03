@@ -3,28 +3,38 @@
     <head>
         <title>Julia's To do List App</title>
         <meta name="vieport" content="width=device-width, initial-scale=1">
-        <link rel = "Stylesheet" href = "./todo.css">
+        <link rel = "Stylesheet" href = "./body2.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet"> 
     </head>
 <body>
-    <div id="todo">
+<div id="todo"></div>
+
+    <div class="header">
         <h1> My to do list <i id="pencil" class="fas fa-pencil-alt"></i></h1>
-        <input type="text" placeholder="Add New Todo" maxlength="30">
-
-        <div class="message"></div>
-
-        <ul class="todos">  
-            <!-- <li><span><i class="fas fa-trash-alt"></i></span>to cook dinner<span><i class="fa fa-check" aria-hidden="true"></i></span</li> -->
-        </ul>
-
-        <div id="buttons">
-            <button class="save">Save</button>
-            <button class="clear">Clear</button>
-            <button class="tipBtn">Tips</button>
-        </div>
     </div>
+
+    <div class="input">
+        <input type="text" placeholder="Add New Todo" maxlength="30">
+    </div>
+
+    <div class="message"></div>
+
+    <div class="todos">
+        <ul class="todos"></ul>
+    </div>
+
+
+    <div id="buttons">
+        <button class="save">Save</button>
+        <button class="clear">Clear</button>
+        <button class="tipBtn">Tips</button>
+    </div>
+
+</div>
+
+    
 
     <div id="overlay">
         <a href="javascript:void(0)" class="closebtn">&times;</a>
