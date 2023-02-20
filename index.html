@@ -1,44 +1,136 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Julia's To do List App</title>
-        <meta name="vieport" content="width=device-width, initial-scale=1">
-        <link rel = "Stylesheet" href = "./todo.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet"> 
-    </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Western Trip - Travel Agency</title>
+  <style>
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      background-color: #ffffff;
+      font-family: 'lato', sans-serif;
+      color: #06332b;
+      text-align: center;
+      margin: 0;
+      height: 100%;
+
+    }
+
+    h1,
+    h2 {
+      color: #09534d;
+      font-family: 'Montserrat', sans-serif;
+    }
+    li {
+      padding: 10px;
+    }
+
+    ul {
+      list-style-type: disc;
+      text-align: center;
+
+    }
+
+    .logo {
+      width: 100px;
+    }
+
+    .content_main {
+      background: rgb(255, 255, 255);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(117, 218, 197, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    }
+
+    .image {
+      width: 400px;
+      height: 500px;
+      margin: 30px 0;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+    }
+
+    .image_footer {
+      width: 100px;
+      border-radius: 50%;
+      margin: 20px;
+    }
+
+    footer {
+      background-color: #ffffff;
+      height: 145px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+</head>
+
 <body>
-    <div id="todo">
-        <h1> My to do list <i id="pencil" class="fas fa-pencil-alt"></i></h1>
-        <input type="text" placeholder="Add New Todo" maxlength="30">
+  <h1>Ласкаво просимо в туристичний клуб Western</h1>
+  <img src="https://i.imgur.com/OGPH9Xy.jpeg" alt="Western1" class="logo">
+  <img src="https://i.imgur.com/2GnIPd6.jpeg" alt="Western1" class="logo">
+  <img src="https://i.imgur.com/iWYWksm.jpeg" alt="Western1" class="logo">
 
-        <div class="message"></div>
+  <div class="content_main">
 
-        <ul class="todos">  
-            <!-- <li><span><i class="fas fa-trash-alt"></i></span>to cook dinner<span><i class="fa fa-check" aria-hidden="true"></i></span</li> -->
-        </ul>
+    <p>Вітаємо на сайті клубу Western, який спеціалізується на проведенні екскурсій та турів до
+      Європи та різних місцевостей України.</p>
 
-        <div id="buttons">
-            <button class="save">Save</button>
-            <button class="clear">Clear</button>
-            <button class="tipBtn">Tips</button>
-        </div>
+    <h2>Наші послуги</h2>
+    <li>Групові тури до популярних європейських міст, спеціально підібрані під ваші інтереси та
+      бюджет.
+    </li>
+    <li>Місцеві тури в Україні з досвідченими гідами, які знають всі таємниці та цікаві місця країни, які ви не знайдете
+      в
+      туристичних путівниках.</li>
+    </ul>
+
+    <div class="content">
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1503410781609-75b1d892dd28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80"
+          alt="Europe Tour" class="image">
+        <p>Пізнай красу та велич Європи у турі з нами</p>
+      </div>
+
+      <div>
+        <img src="https://oir.mobi/uploads/posts/2020-02/1582113586_22-p-vertikalnie-karpati-39.jpg" alt="Ukraine Tour"
+          class="image">
+        <p>Відкрийте для себе приховані перлини України в одному з наших місцевих турів</p>
+      </div>
+
     </div>
 
-    <div id="overlay">
-        <a href="javascript:void(0)" class="closebtn">&times;</a>
-        <ul type="disc" class="tips">
-            <li>Click on the pencil to hide or show input area</li>
-            <li>Type text into input area and press enter to add todo to list</li>
-            <li>Hover over the todo and click the on trash can to delete</li>
-            <li>Hover over the todo and click the on check icon can to checked</li>
-            <li>Click the clear button to clear all todos from list</li>
-            <li>Click the Save button to save your todos to access them later even if you exit the browser </li>
-        </ul>
-    </div>
+    <h2>Контакти</h2>
+    <p>Phone: +38 (097) 142 8512</p>
+    <p>Email: nad_info@westerntrip.com</p>
+    <p>Address: Lviv, Ukraine</p>
 
-    <script src="./todo.js"></script>
+  </div>
+
+  <footer>
+    <img src="https://i.imgur.com/DM19KD6.jpg" alt="Western Footer" class="image_footer">
+
+    <div>
+      <p> туристичний клуб </p>
+      <h1>WESTERN</h1>
+    </div>
+  </footer>
 </body>
-</html>
 
+</html>
